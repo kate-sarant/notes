@@ -1,0 +1,114 @@
+
+			-------------tailwindcss steps setup-------------
+
+➡️ create the file that you will store your project 
+
+
+➡️ open the terminal: mkdir project_folder
+
+➡️ open the folder : cd project_folder
+
+➡️ open code studio : ./ code
+
+➡️open the terminal:mkidir dist
+
+
+➡️ make a index.html file where you will make your html project
+
+➡️create a output.css file where you will store the tailwind classies.
+
+➡️ mkdir src
+
+➡️create a input.css file 
+
+➡️ open the terminal:
+
+➡️ Install tailwindcss via npm, and create your tailwind.config.js file.
+	
+	1) npm install -D tailwindcss
+
+	2)npx tailwindcss init
+
+➡️ Add the paths to all of your template files in your tailwind.config.js file.
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./dist/*.{html,js}"], <------- add this!!!
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
+➡️ Add the @tailwind directives for each of Tailwind’s layers to your main CSS file.
+
+Go to src/input.css and add this:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+➡️ Run the CLI tool to scan your template files for classes and build your CSS.
+
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+
+
+Tip!!!
+
+Because is hard to remember the full command :
+
+go to package.json:
+
+create a npm run dev command
+
+
+
+{
+  "name": "tailwindcss_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"tailwindcss -i ./src/input.css -o ./dist/output.css --watch" <--------- add this!!!
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
+
+At the end add to src/index.html the output.css
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">  <-----------------------  add this!!!
+</head> 
+<body>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+</body>
+</html>
+
+
+
+documentation.
+https://tailwindcss.com/docs/installation
+
+at tailwind.config file 
+
+adding  to extend -> give complimentary colors for ex
+addind  to theme -> overwriting existing colors.
+
+
+
+
+
