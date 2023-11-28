@@ -105,7 +105,7 @@ documentation.
 https://tailwindcss.com/docs/installation
 
 at tailwind.config file 
-'&lt;p&gt;&amp;nbsp;&lt;/p&gt;'
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
 adding  to extend -> give complimentary colors for ex
 addind  to theme -> overwriting existing colors.
