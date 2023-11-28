@@ -101,6 +101,7 @@ At the end add to src/index.html the output.css
 
 
 documentation.
+
 https://tailwindcss.com/docs/installation
 
 at tailwind.config file 
