@@ -84,19 +84,19 @@ create a npm run dev command
 
 At the end add to src/index.html the output.css
 
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">  <-----------------------  add this!!!
-</head> 
-<body>
-  <h1 class="text-3xl font-bold underline">
+&lt;!doctype html&gt;
+&lt;html&gt;
+<&lt;head&gt;>
+  &lt;meta&gt; charset="UTF-8">
+  &lt;meta&gt; name="viewport" content="width=device-width, initial-scale=1.0">
+  &lt;link&gt; href="/dist/output.css" rel="stylesheet">  <-----------------------  add this!!!
+ &lt;/head&gt;
+&lt;body&gt;
+   &lt;h1&gt; class="text-3xl font-bold underline">
     Hello world!
-  </h1>
-</body>
-</html>
+   &lt;/h1&gt;
+&lt;/body&gt;
+ &lt;/html&gt;
 
 
 
